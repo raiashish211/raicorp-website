@@ -143,7 +143,7 @@
   /* ---------- page ---------- */
   var H = S.hero || {};
   var html = [];
-  if (S.sample) html.push('<div class="k-notice"><b>Sample website by RaiCorp.</b> The business name and details are illustrative. <a href="' + esc(S.agencyUrl || "https://www.raicorp.in/contact.html") + '">Get one like this →</a></div>');
+  if (S.sample) html.push('<div class="k-notice"><b>Sample website by RaiCorp.</b> The business name and details are illustrative. <a href="' + esc(S.agencyUrl || "https://raicorp.in/contact.html") + '">Get one like this →</a></div>');
   if (S.top && S.top.length) html.push('<div class="k-top"><div class="k-wrap">' + list(S.top, function (t, i) { return "<span" + (i > 0 ? ' class="k-hide-m"' : "") + ">" + icon(t[0]) + esc(t[1]) + "</span>"; }) + "</div></div>");
   html.push('<header class="k-header"><div class="k-wrap"><a class="k-brand" href="#top"><span class="k-mark">' + esc(S.monogram || (S.name || "?")[0]) + "</span><span><b>" + esc(S.name) + "</b>" + (S.tagline ? "<small>" + esc(S.tagline) + "</small>" : "") + "</span></a>" +
     '<nav class="k-nav" aria-label="Main">' + list(S.nav, function (n) { return '<a href="' + esc(n[1]) + '">' + esc(n[0]) + "</a>"; }) +
@@ -158,7 +158,7 @@
     "</div></div></section>");
   (S.sections || []).forEach(function (o) { if (R[o.type]) html.push(R[o.type](o)); });
   html.push("</main>");
-  html.push('<footer class="k-footer"><div class="k-wrap"><span>© ' + new Date().getFullYear() + " " + esc(S.name) + (S.address ? " · " + esc(S.address) : "") + "</span><span>Website by <a href=\"" + esc(S.agencyUrl || "https://www.raicorp.in") + '">RaiCorp</a></span></div></footer>');
+  html.push('<footer class="k-footer"><div class="k-wrap"><span>© ' + new Date().getFullYear() + " " + esc(S.name) + (S.address ? " · " + esc(S.address) : "") + "</span><span>Website by <a href=\"" + esc(S.agencyUrl || "https://raicorp.in") + '">RaiCorp</a></span></div></footer>');
   if (S.whatsapp) html.push('<a class="k-float" ' + waAttrs(S.navCta || "Hi") + ' aria-label="WhatsApp">' + WA_SVG + "</a>");
 
   document.body.innerHTML = html.join("");

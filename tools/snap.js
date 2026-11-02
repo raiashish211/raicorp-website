@@ -9,7 +9,7 @@
     npm run snap -- <project-id> <url> [#section ...]
 
   Example:
-    npm run snap -- smilecraft-dental https://www.raicorp.in/samples/smilecraft-dental/ #services #about
+    npm run snap -- smilecraft-dental https://raicorp.in/samples/smilecraft-dental/ #services #about
     npm run snap -- sharma-clinic https://sharmaclinic.in
 
   Output: assets/img/work/<project-id>/
