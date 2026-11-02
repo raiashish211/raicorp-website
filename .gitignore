@@ -1,0 +1,6 @@
+# Office / private code kabhi public repo me nahi jaana chahiye
+*.cs
+*.csproj
+*.sln
+node_modules/
+.DS_Store

@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Sample website</title>
+<link rel="stylesheet" href="../kit/kit.css">
+</head>
+<body>
+<script>
+window.SITE = {
+  sample: true,
+  name: "SmileCraft Dental Studio",
+  tagline: "Phase 7, Mohali",
+  monogram: "S",
+  titleSuffix: "Dentist in Mohali",
+  whatsapp: "919582927207",
+  sampleMessage: "Hi RaiCorp, I saw the SmileCraft Dental sample website. I want a website like this for my clinic.",
+  address: "Phase 7, Mohali, Punjab",
+  hours: "Mon–Sat 10:00 am – 8:00 pm · Sun by appointment",
+  theme: {
+    primary: "#0E5A6B", accent: "#F2B35E", onAccent: "#2A1A00",
+    bg: "#F6F8F8", ink: "#13252B", muted: "#55666B", line: "#DCE4E5",
+    heroBg: "#0A3E4A", artBg: "#11505F", artIcon: "#F7E6CC", artLine: "rgba(247,230,204,.35)",
+    footerBg: "#082F38",
+    display: "'DM Serif Display', Georgia, serif", body: "'DM Sans', system-ui, sans-serif",
+    fonts: "family=DM+Serif+Display&family=DM+Sans:wght@400;500;600;700",
+    radius: "soft"
+  },
+  top: [["clock", "Open today till 8 pm"], ["pin", "Phase 7, Mohali"]],
+  nav: [["Treatments", "#services"], ["Doctor", "#about"], ["Clinic", "#gallery"], ["FAQ", "#faq"]],
+  navCta: "Book appointment",
+  hero: {
+    eyebrow: "Family & cosmetic dentistry",
+    title: "Gentle dental care, *without the wait.*",
+    lede: "Root canals, implants, braces and smile makeovers in one calm clinic. Book your slot on WhatsApp and walk in on time.",
+    primary: "Book on WhatsApp",
+    secondary: ["View treatments", "#services"],
+    trust: [["shield", "Sterilised instruments"], ["clock", "Same-day pain relief"], ["heart", "Kid-friendly"]],
+    icon: "tooth",
+    cards: [["calendar", "Next slot: 4:30 pm", "Book in 30 seconds"], ["sparkle", "Free check-up", "on first visit"]]
+  },
+  sections: [
+    { type: "strip", items: [["15+", "treatments under one roof"], ["Digital X-ray", "results on your phone"], ["EMI", "for implants & braces"], ["6 days", "a week, evenings too"]] },
+    { type: "cards", id: "services", eyebrow: "Treatments", title: "Everything your smile needs", intro: "Clear prices upfront. Your dentist explains every option before starting.", ask: "Book",
+      items: [
+        { icon: "pulse", title: "Root canal treatment", text: "Single-sitting RCT with rotary instruments and local anaesthesia.", price: "From ₹3,500" },
+        { icon: "tooth", title: "Dental implants", text: "Fixed replacement for missing teeth, with a written warranty.", tag: "EMI", price: "From ₹22,000" },
+        { icon: "smile", title: "Braces & aligners", text: "Metal, ceramic and clear aligners for teens and adults.", price: "From ₹30,000" },
+        { icon: "sparkle", title: "Teeth whitening", text: "In-clinic whitening, several shades brighter in one visit.", price: "From ₹6,000" },
+        { icon: "shield", title: "Cleaning & scaling", text: "Remove tartar and stains. Recommended every six months.", price: "From ₹1,200" },
+        { icon: "heart", title: "Kids dentistry", text: "Fillings, fluoride and habit care in a child-friendly room.", price: "From ₹800" }
+      ] },
+    { type: "person", alt: true, eyebrow: "Your dentist", name: "Dr. Kavya Malhotra", role: "BDS, MDS (Prosthodontics)",
+      text: ["Dr. Kavya has spent over a decade making dental visits less scary. She plans every treatment with you on screen, so you know the cost and time before anything begins."],
+      points: ["Implant & smile-design specialist", "Explains every treatment in Hindi, Punjabi or English", "Follow-up reminders on WhatsApp"], photoNote: "Doctor's photo goes here" },
+    { type: "steps", eyebrow: "How it works", title: "From WhatsApp to a pain-free smile", items: [["Message us", "Send your name and the problem on WhatsApp."], ["Pick a slot", "We share open slots for today and tomorrow."], ["Check-up", "Digital X-ray and a clear treatment plan with cost."], ["Treatment", "Done on time, with follow-up reminders."]] },
+    { type: "gallery", alt: true, eyebrow: "The clinic", title: "Clean, calm and modern", items: ["Treatment room", "Reception", "Digital X-ray", "Sterilisation area", "Kids corner", "Waiting lounge"] },
+    { type: "reviews", title: "Patients *recommend us*", intro: "Your clinic's real Google reviews show up here." },
+    { type: "faq", eyebrow: "Questions", title: "Before your first visit", items: [["Is root canal treatment painful?", "With modern anaesthesia most patients feel only mild pressure. We check comfort at every step."], ["Do you offer EMI?", "Yes, for implants, braces and aligners above ₹20,000."], ["Can I walk in without an appointment?", "Yes, but booking on WhatsApp means you will not wait."], ["Do you treat children?", "Yes. We see children from age three in a separate kid-friendly room."]] },
+    { type: "cta", title: "Toothache today? *We can see you.*", text: "Message us now and get the next available slot.", label: "Book on WhatsApp" },
+    { type: "contact", eyebrow: "Visit us", title: "Book your appointment", fields: [["Your name", "text"], ["Phone number", "tel"], ["Treatment", "select", ["Check-up", "Root canal", "Implant", "Braces / aligners", "Whitening", "Other"]], ["Preferred day & time", "text"]], submit: "Book on WhatsApp", formTitle: "Request a slot" }
+  ]
+};
+</script>
+<script src="../kit/kit.js"></script>
+</body>
+</html>

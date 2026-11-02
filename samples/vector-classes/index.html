@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Sample website</title>
+<link rel="stylesheet" href="../kit/kit.css">
+</head>
+<body>
+<script>
+window.SITE = {
+  sample: true,
+  name: "Vector Classes",
+  tagline: "JEE · NEET · Foundation",
+  monogram: "V",
+  titleSuffix: "JEE & NEET coaching in Faridabad",
+  whatsapp: "919582927207",
+  sampleMessage: "Hi RaiCorp, I saw the Vector Classes sample website. I want a website like this for my institute.",
+  address: "Sector 15, Faridabad, Haryana",
+  hours: "Mon–Sat 8:00 am – 8:00 pm",
+  theme: {
+    primary: "#2A1F6E", accent: "#FFC83D", onAccent: "#231A00",
+    bg: "#F7F6FB", ink: "#16132B", muted: "#5B5873", line: "#E2E0EE",
+    heroBg: "#1C1450", artBg: "#2E2380", artIcon: "#FFE59A", artLine: "rgba(255,229,154,.35)",
+    footerBg: "#120D36",
+    display: "'Archivo', system-ui, sans-serif", body: "'Work Sans', system-ui, sans-serif",
+    fonts: "family=Archivo:wght@600;800&family=Work+Sans:wght@400;500;600",
+    radius: "sharp"
+  },
+  top: [["calendar", "Scholarship test on Sunday — register free"], ["pin", "Sector 15, Faridabad"]],
+  nav: [["Courses", "#courses"], ["Results", "#results"], ["Faculty", "#about"], ["FAQ", "#faq"]],
+  navCta: "Book a demo class",
+  hero: {
+    eyebrow: "Admissions open · 2027 batches",
+    title: "Crack JEE & NEET with *weekly tests and small batches.*",
+    lede: "Classroom coaching for Class 9 to 12 and droppers. Maximum 30 students per batch, weekly all-India pattern tests and doubt sessions every evening.",
+    primary: "Book a free demo class",
+    secondary: ["See courses", "#courses"],
+    trust: [["users", "30 students per batch"], ["chart", "Weekly test reports"], ["clock", "Daily doubt hour"]],
+    icon: "cap",
+    cards: [["target", "Scholarship test", "Up to 50% fee waiver"], ["calendar", "New batch", "starts 15th of the month"]]
+  },
+  sections: [
+    { type: "strip", items: [["30", "students max per batch"], ["Weekly", "tests with rank & analysis"], ["Daily", "doubt-clearing hour"], ["Parent app", "attendance & marks updates"]] },
+    { type: "cards", id: "courses", eyebrow: "Courses", title: "Pick your batch", intro: "All courses include printed study material, weekly tests and parent-teacher meetings every month.", ask: "Enquire",
+      items: [
+        { icon: "target", tag: "2 years", title: "JEE Main + Advanced", text: "For Class 11 students. Physics, Chemistry and Maths from basics to advanced.", meta: [["calendar", "Mon–Sat"], ["clock", "4–7 pm"]], price: "₹85,000 / year" },
+        { icon: "heart", tag: "2 years", title: "NEET (UG)", text: "For Class 11 students. Biology-focused with NCERT-first approach.", meta: [["calendar", "Mon–Sat"], ["clock", "4–7 pm"]], price: "₹80,000 / year" },
+        { icon: "chart", tag: "1 year", title: "Dropper batch", text: "Full-day programme for JEE and NEET repeaters with daily practice.", meta: [["calendar", "Mon–Sat"], ["clock", "9 am–3 pm"]], price: "₹95,000" },
+        { icon: "book", tag: "Class 9–10", title: "Foundation", text: "Science and Maths with Olympiad and NTSE preparation.", meta: [["calendar", "Mon, Wed, Fri"], ["clock", "5–7 pm"]], price: "₹45,000 / year" }
+      ] },
+    { type: "steps", id: "results", alt: true, eyebrow: "How we teach", title: "A system that shows *progress every week*", items: [["Learn", "Concept classes in small batches so every student is seen."], ["Practise", "Daily practice sheets and a doubt hour after class."], ["Test", "Weekly all-India pattern test with rank and chapter analysis."], ["Review", "Monthly parent meeting with marks trend and next steps."]] },
+    { type: "person", eyebrow: "Founder & Physics faculty", name: "Rohit Bansal", role: "B.Tech, IIT Roorkee",
+      text: ["Rohit started Vector Classes to give students in Faridabad the same test-driven system as big-city coaching, with batches small enough that no student hides at the back."],
+      points: ["12 years teaching JEE Physics", "Personal mentoring for every student", "Faculty team from IIT and NIT backgrounds"], photoNote: "Faculty photo goes here" },
+    { type: "gallery", alt: true, eyebrow: "Campus", title: "Built for focused study", items: ["Smart classroom", "Library & self-study hall", "Test centre", "Doubt counter", "Biology lab", "Parent lounge"] },
+    { type: "reviews", title: "Students and parents *talk about us*", intro: "Your institute's real Google reviews and toppers list show up here." },
+    { type: "faq", eyebrow: "Admissions", title: "Questions parents ask", items: [["How do I get admission?", "Book a free demo class, then take the scholarship test. Admission and fee waiver are decided on the test result."], ["Are fees payable in instalments?", "Yes, in three instalments through the year."], ["Is study material included?", "Yes, printed modules and test papers are included in the fee."], ["Do you provide transport?", "Not directly, but we share a list of van services covering nearby sectors."]] },
+    { type: "cta", title: "Scholarship test this *Sunday*", text: "Register free and get up to 50% off on fees.", label: "Register on WhatsApp" },
+    { type: "contact", eyebrow: "Visit the centre", title: "Book a free demo class", fields: [["Student name", "text"], ["Parent's phone", "tel"], ["Class", "select", ["Class 9", "Class 10", "Class 11", "Class 12", "Dropper"]], ["Course", "select", ["JEE", "NEET", "Foundation"]]], submit: "Book on WhatsApp", formTitle: "Demo class request" }
+  ]
+};
+</script>
+<script src="../kit/kit.js"></script>
+</body>
+</html>

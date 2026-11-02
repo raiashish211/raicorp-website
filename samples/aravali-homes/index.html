@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Sample website</title>
+<link rel="stylesheet" href="../kit/kit.css">
+</head>
+<body>
+<script>
+window.SITE = {
+  sample: true,
+  name: "Aravali Homes & Realty",
+  tagline: "Greater Faridabad",
+  monogram: "A",
+  titleSuffix: "Property dealer in Greater Faridabad",
+  whatsapp: "919582927207",
+  sampleMessage: "Hi RaiCorp, I saw the Aravali Homes sample website. I want a website like this for my property business.",
+  address: "Sector 81, Greater Faridabad, Haryana",
+  hours: "Every day 10:00 am – 7:00 pm",
+  theme: {
+    primary: "#1E3B30", accent: "#E7B24C", onAccent: "#271A00",
+    bg: "#F5F6F2", ink: "#17201B", muted: "#566259", line: "#DFE3DA",
+    heroBg: "#152A22", artBg: "#24463A", artIcon: "#F3DFB0", artLine: "rgba(243,223,176,.35)",
+    footerBg: "#0F1F19",
+    display: "'Marcellus', Georgia, serif", body: "'Manrope', system-ui, sans-serif",
+    fonts: "family=Marcellus&family=Manrope:wght@400;500;600;700",
+    radius: "soft"
+  },
+  top: [["phone", "Site visits every day, free pick-up"], ["pin", "Sector 81, Greater Faridabad"]],
+  nav: [["Properties", "#listings"], ["Why us", "#about"], ["Process", "#process"], ["FAQ", "#faq"]],
+  navCta: "Book a site visit",
+  hero: {
+    eyebrow: "Verified properties · Greater Faridabad",
+    title: "Your next home in Faridabad, *verified before you visit.*",
+    lede: "Plots, builder floors and flats in Sectors 75 to 89. Every listing checked for papers, approvals and real price before we show it to you.",
+    primary: "Book a free site visit",
+    secondary: ["See properties", "#listings"],
+    trust: [["shield", "Papers checked"], ["key", "Ready & under-construction"], ["car", "Free site-visit pick-up"]],
+    icon: "home",
+    cards: [["building", "40+ live listings", "Sectors 75–89"], ["shield", "RERA details", "on every project"]]
+  },
+  sections: [
+    { type: "strip", items: [["Sectors 75–89", "Greater Faridabad focus"], ["Verified", "papers & approvals"], ["Home loans", "help with top banks"], ["7 days", "site visits"]] },
+    { type: "cards", id: "listings", variant: "listing", eyebrow: "Featured properties", title: "Handpicked this week", intro: "Prices are indicative. Ask on WhatsApp for the latest availability and floor plans.", ask: "Ask price",
+      items: [
+        { icon: "building", tag: "Ready to move", title: "3 BHK builder floor", text: "Sector 82 · Park facing, stilt parking", meta: [["bed", "3 bed"], ["area", "1,450 sq ft"]], price: "₹78 lakh" },
+        { icon: "home", tag: "Plot", title: "200 sq yd residential plot", text: "Sector 77 · 24 m road, corner", meta: [["area", "200 sq yd"], ["shield", "Clear title"]], price: "₹1.32 cr" },
+        { icon: "building", tag: "New launch", title: "2 BHK apartment", text: "Sector 86 · Gated society with club", meta: [["bed", "2 bed"], ["area", "1,120 sq ft"]], price: "₹62 lakh" },
+        { icon: "home", tag: "Rent", title: "2 BHK floor for rent", text: "Sector 81 · Semi-furnished, near metro", meta: [["bed", "2 bed"], ["area", "1,050 sq ft"]], price: "₹18,000 / month" },
+        { icon: "tree", tag: "Plot", title: "300 sq yd plot", text: "Sector 89 · Near expressway, east facing", meta: [["area", "300 sq yd"], ["shield", "Approved layout"]], price: "₹1.85 cr" },
+        { icon: "building", tag: "Ready to move", title: "4 BHK duplex floor", text: "Sector 84 · Top floor with terrace", meta: [["bed", "4 bed"], ["area", "2,200 sq ft"]], price: "₹1.15 cr" }
+      ] },
+    { type: "person", id: "about", alt: true, eyebrow: "Why buyers trust us", name: "Sandeep Chauhan", role: "Founder, Aravali Homes & Realty",
+      text: ["Sandeep has helped families buy and rent homes in Greater Faridabad for over 15 years. Every property is visited and checked before it goes on this website."],
+      points: ["Title and approval check before listing", "Home-loan help with major banks", "No hidden brokerage — fee agreed upfront"], photoNote: "Owner's photo goes here" },
+    { type: "steps", id: "process", eyebrow: "How it works", title: "Buying made *simple*", items: [["Tell us your budget", "Budget, sector and type on WhatsApp."], ["Get a shortlist", "Matching properties with photos and prices the same day."], ["Visit", "Free pick-up and drop for site visits."], ["Paperwork", "Agreement, loan and registry support till possession."]] },
+    { type: "gallery", alt: true, eyebrow: "Areas we cover", title: "Greater Faridabad, sector by sector", items: ["Sector 75–78", "Sector 79–81", "Sector 82–84", "Sector 85–86", "Sector 87–88", "Sector 89"] },
+    { type: "reviews", title: "Families who *found their home*", intro: "Your real Google reviews show up here." },
+    { type: "faq", eyebrow: "Questions", title: "Before you buy", items: [["Do you charge brokerage?", "Our fee is agreed in writing before the deal. No hidden charges."], ["Do you help with home loans?", "Yes, we help with documents and connect you with major banks."], ["Are prices negotiable?", "Prices shown are indicative. We negotiate with the seller on your behalf."], ["Can NRIs buy through you?", "Yes. We share video walkthroughs and handle site visits for family members."]] },
+    { type: "cta", title: "See 3 matching homes *this weekend*", text: "Send your budget and preferred sector. We will share a shortlist today.", label: "Share my budget" },
+    { type: "contact", eyebrow: "Contact", title: "Book a free site visit", fields: [["Your name", "text"], ["Phone number", "tel"], ["Looking for", "select", ["Buy flat / floor", "Buy plot", "Rent", "Sell my property"]], ["Budget", "text"]], submit: "Send on WhatsApp", formTitle: "Tell us what you need" }
+  ]
+};
+</script>
+<script src="../kit/kit.js"></script>
+</body>
+</html>

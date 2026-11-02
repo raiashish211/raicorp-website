@@ -1,0 +1,11 @@
+{
+  "name": "raicorp-website",
+  "private": true,
+  "scripts": {
+    "snap": "node tools/snap.js",
+    "serve": "npx --yes http-server -p 8000 -c-1 ."
+  },
+  "devDependencies": {
+    "playwright": "^1.48.0"
+  }
+}

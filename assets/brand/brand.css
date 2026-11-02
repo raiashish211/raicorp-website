@@ -1,0 +1,19 @@
+/* RAICORP BRAND — logo sizes + group bar. Dono sites (main + /recruitment) isse use karti hain. */
+.rc-mark { width: 38px; height: 38px; flex: none; display: block; }
+.rc-mark-xs { width: 18px; height: 18px; }
+.rc-word { height: 15px; width: auto; display: block; }
+.rc-lockup { display: inline-flex; align-items: center; gap: 12px; }
+.rc-lockup-text { display: flex; flex-direction: column; gap: 5px; }
+.rc-sub { font: 700 .68rem/1 system-ui, sans-serif; letter-spacing: .26em; text-transform: uppercase; color: #9A7A3A; }
+.rc-mark .rc-ticks { transform-origin: 50% 50%; transition: transform .6s cubic-bezier(.2,.7,.2,1); }
+a:hover > .rc-lockup .rc-mark .rc-ticks, a:focus-visible > .rc-lockup .rc-mark .rc-ticks { transform: rotate(90deg) scale(.92); }
+
+.rc-group { background: #0A0F1C; color: #AEB4C2; font: 600 .8rem/1 system-ui, sans-serif; letter-spacing: .02em; border-bottom: 1px solid rgba(201,164,92,.18); }
+.rc-group-in { max-width: 1200px; margin: 0 auto; padding: 0 max(20px, env(safe-area-inset-right, 0px)) 0 max(20px, env(safe-area-inset-left, 0px)); display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 36px; }
+.rc-group-name { display: inline-flex; align-items: center; gap: 8px; letter-spacing: .14em; text-transform: uppercase; font-size: .7rem; color: #C9A45C; }
+.rc-group nav { display: flex; gap: 4px; }
+.rc-group nav a { color: #AEB4C2; text-decoration: none; padding: 6px 12px; border-radius: 999px; transition: color .2s, background .2s; }
+.rc-group nav a:hover { color: #fff; background: rgba(255,255,255,.06); }
+.rc-group nav a[aria-current="page"] { color: #0D1321; background: #C9A45C; }
+@media (max-width: 520px) { .rc-group-name { font-size: 0; gap: 0; } .rc-group-name .rc-mark { margin-right: 0; } }
+@media (prefers-reduced-motion: reduce) { .rc-mark .rc-ticks { transition: none; } }
