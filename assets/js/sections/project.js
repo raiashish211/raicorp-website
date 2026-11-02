@@ -31,6 +31,7 @@ RC.section("project", function (el) {
     "</div>" +
     '<aside class="p-ask"><h2>Is this right for your business?</h2>' + (s.idealFor ? "<p>" + E(s.idealFor) + "</p>" : "") +
       (s.live || s.demoUrl ? '<a class="btn btn-gold btn-lg" href="' + E(s.live || s.demoUrl) + '" target="_blank" rel="noopener">Open live website ↗</a>' : "") +
+      (s.tiers ? '<div class="p-tiers"><span>See each plan live:</span>' + RC.list(s.tiers, function (t) { return '<a href="' + E(t[1]) + '" target="_blank" rel="noopener">' + E(t[0]) + " ↗</a>"; }) + "</div>" : "") +
       '<a class="btn btn-primary" ' + yes + ">Yes, I want one like this</a>" +
       '<a class="btn btn-ghost" ' + change + ">Suggest changes for my business</a>" +
       '<a class="p-quote" href="contact.html?plan=' + encodeURIComponent("Like: " + s.title) + '">Or send your details for a quote</a>' +

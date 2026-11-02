@@ -40,7 +40,7 @@ CONTENT.home = {
   showcase: {
     heading: "Pick your business. Open a live sample.",
     intro: "Working sample websites built for real kinds of businesses. Open one live on your phone.",
-    picks: ["smilecraft-dental", "vector-classes", "aravali-homes", "blueroute-visa", "leaddesk-crm", "coolfix-field"] // portfolio ids
+    picks: ["inkline-prints", "smilecraft-dental", "vector-classes", "aravali-homes", "blueroute-visa", "leaddesk-crm", "coolfix-field"] // portfolio ids
   },
 
   process: {

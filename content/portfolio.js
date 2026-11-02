@@ -18,6 +18,89 @@ CONTENT.portfolio = {
   items: [
   {
     "type": "website",
+    "id": "inkline-prints",
+    "category": "printing-signage",
+    "title": "Inkline Prints & Signs",
+    "location": "Faridabad",
+    "status": "concept",
+    "theme": "#0E0F13",
+    "accent": "#E6007E",
+    "heroText": "Print that gets noticed",
+    "nav": [
+      "Services",
+      "Price check",
+      "Our work",
+      "Contact"
+    ],
+    "cta": "Get a quote",
+    "summary": "A premium website for printing and sign-board shops: product catalog with starting prices, an instant price estimator and WhatsApp quotes.",
+    "idealFor": "Printing presses, flex & sign-board makers, branding and gifting shops.",
+    "pages": [
+      "Home with lit sign-board hero",
+      "Products & starting prices",
+      "Instant price estimator (sq ft, letters, quantity)",
+      "Work gallery with filters",
+      "FAQ & contact"
+    ],
+    "features": [
+      "Comes in 3 plans: Basic, Business, Premium",
+      "One config file for name, logo, colours, prices and photos",
+      "Price check by size or quantity, sent to WhatsApp",
+      "Category filters and full-screen gallery",
+      "Sticky Call / WhatsApp / Price bar on mobile"
+    ],
+    "tech": [
+      "HTML/CSS/JS",
+      "Config-driven",
+      "WhatsApp enquiries",
+      "Fast static hosting"
+    ],
+    "software": "Order tracker and job-card system for the print floor can be added later.",
+    "live": "samples/printing/premium/",
+    "tiers": [
+      [
+        "Basic",
+        "samples/printing/basic/"
+      ],
+      [
+        "Business",
+        "samples/printing/business/"
+      ],
+      [
+        "Premium",
+        "samples/printing/premium/"
+      ]
+    ],
+    "media": [
+      {
+        "type": "image",
+        "src": "assets/img/work/inkline-prints/1-home.jpg",
+        "label": "Home page"
+      },
+      {
+        "type": "image",
+        "src": "assets/img/work/inkline-prints/2-services.jpg",
+        "label": "Products & prices"
+      },
+      {
+        "type": "image",
+        "src": "assets/img/work/inkline-prints/3-estimator.jpg",
+        "label": "Instant price check"
+      },
+      {
+        "type": "image",
+        "src": "assets/img/work/inkline-prints/4-work.jpg",
+        "label": "Work gallery"
+      },
+      {
+        "type": "image",
+        "src": "assets/img/work/inkline-prints/9-mobile.jpg",
+        "label": "On mobile"
+      }
+    ]
+  },
+  {
+    "type": "website",
     "id": "smilecraft-dental",
     "category": "clinics",
     "title": "SmileCraft Dental Studio",

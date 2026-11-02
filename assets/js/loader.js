@@ -17,7 +17,7 @@
     .concat(["assets/brand/brand.js", "assets/js/core.js"])
     .concat(SECTIONS.map(function (n) { return "assets/js/sections/" + n + ".js"; }))
     .concat(["assets/js/boot.js"]);
-  var v = "?v=3"; // cache-busting: content update ke baad number badha do (v=2, v=3...)
+  var v = "?v=4"; // cache-busting: content update ke baad number badha do (v=2, v=3...)
   files.forEach(function (src) {
     var s = document.createElement("script");
     s.src = src + v;

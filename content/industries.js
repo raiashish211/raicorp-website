@@ -8,6 +8,11 @@ CONTENT.industries = {
   intro: "We've designed for {count} kinds of businesses in India and abroad. Pick yours to see what we'd build.",
   items: [
   {
+    "id": "printing-signage",
+    "name": "Printing, sign boards & branding",
+    "market": "india"
+  },
+  {
     "id": "property-dealers",
     "name": "Property dealers & builders",
     "market": "india"
