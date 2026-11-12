@@ -6,6 +6,10 @@ Dental, skin, physio aur chhote independent clinics ke liye website. **Poori sit
 - Basic: https://raicorp.in/samples/clinic/basic/
 - Advanced: https://raicorp.in/samples/clinic/advanced/
 - Pro: https://raicorp.in/samples/clinic/pro/
+- Physio version: https://raicorp.in/samples/clinic/physio/
+- Skin version: https://raicorp.in/samples/clinic/skin/
+
+`variants/physio.js` aur `variants/skin.js` dikhate hain ki physio/skin client ke liye config me kya badalna hai.
 
 ## Naya clinic — onboarding (30–45 min)
 1. Ye `clinic/` folder copy karo (naya repo ya `samples/<clinic-naam>/`).

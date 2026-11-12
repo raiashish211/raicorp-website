@@ -50,7 +50,7 @@
   function initials(n) { return (n || "").replace(/^Dr\.?\s*/i, "").split(" ").filter(Boolean).slice(0, 2).map(function (w) { return w[0]; }).join(""); }
   function logo() {
     if (K.logo) return '<img class="logo-img" src="' + esc(src(K.logo)) + '" alt="' + esc(K.name) + '">';
-    return '<span class="logo-mark" aria-hidden="true">' + ic("tooth") + "</span>";
+    return '<span class="logo-mark" aria-hidden="true">' + ic(K.icon || "tooth") + "</span>";
   }
   function treatmentOptions() { return '<option value="">Select</option>' + list(S.treatments, function (t) { return "<option>" + esc(t.name) + "</option>"; }) + "<option>Other / not sure</option>"; }
 
@@ -72,7 +72,7 @@
       '<div class="actions"><a class="btn btn-primary" href="' + (tier >= 3 ? "#appointment" : "#contact") + '">' + ic("cal") + "<span>" + esc(H.primary || "Book an appointment") + "</span></a>" +
       '<a class="btn btn-wa" ' + waA("Hi " + K.short + ", I would like to book an appointment.") + ">" + WA + "<span>WhatsApp</span></a></div>" +
       '<ul class="points">' + list(H.points, function (p) { return "<li>" + ic("check") + esc(p) + "</li>"; }) + "</ul></div>" +
-      '<div class="hero-art" aria-hidden="true"><div class="ha-panel"><span class="ha-ring r1"></span><span class="ha-ring r2"></span>' + ic("tooth", "ha-tooth") + "</div>" +
+      '<div class="hero-art" aria-hidden="true"><div class="ha-panel"><span class="ha-ring r1"></span><span class="ha-ring r2"></span>' + ic(K.icon || "tooth", "ha-tooth") + "</div>" +
         '<div class="ha-card c1"><span class="ha-dot">' + ic("clock") + "</span><p><b>Next slot today</b><span>6:00 pm · " + esc(K.short) + "</span></p></div>" +
         '<div class="ha-card c2"><span class="ha-av">' + esc(initials(d.name)) + "</span><p><b>" + esc(d.name) + "</b><span>" + esc(d.role) + "</span></p></div>" +
         (tier >= 2 ? '<div class="ha-card c3"><span class="ha-stars">' + ic("star", "ic st") + ic("star", "ic st") + ic("star", "ic st") + ic("star", "ic st") + ic("star", "ic st") + "</span><p><b>Google reviews</b><span>shown on the site</span></p></div>" : "") +
@@ -82,7 +82,7 @@
     return '<section class="trust"><div class="wrap"><dl>' + list(S.trust, function (t) { return '<div class="rv"><dt>' + esc(t[0]) + "</dt><dd>" + esc(t[1]) + "</dd></div>"; }) + "</dl>" + (S.sample && S.trustNote ? '<p class="fine">' + esc(S.trustNote) + "</p>" : "") + "</div></section>";
   };
   R.treatments = function () {
-    return '<section class="sec" id="treatments"><div class="wrap">' + head("Treatments", "Care for the whole *family.*", tier >= 2 ? "Clear starting prices. Your dentist explains every option before starting." : S.about) +
+    return '<section class="sec" id="treatments"><div class="wrap">' + head("Treatments", S.treatmentsTitle || "Care for the whole *family.*", tier >= 2 ? "Clear starting prices. Your " + (K.doctorWord || "doctor") + " explains every option before starting." : S.about) +
       '<div class="tr-grid' + (tier === 1 ? " tr-simple" : "") + '">' + list(S.treatments, function (t) {
         return '<article class="tr rv"><span class="tr-ic">' + ic(t.icon) + "</span><h3>" + esc(t.name) + "</h3><p>" + esc(t.text) + "</p>" +
           (tier >= 2 ? '<div class="tr-foot"><span><b>' + esc(t.price) + "</b>" + (t.time ? "<i>" + esc(t.time) + "</i>" : "") + '</span><a href="' + (tier >= 3 ? "#appointment" : "#contact") + '" data-treat="' + esc(t.name) + '">Book ' + ic("arrow") + "</a></div>" : "") + "</article>";
@@ -95,7 +95,7 @@
   };
   R.doctors = function () {
     var docs = tier === 1 ? (S.doctors || []).slice(0, 1) : S.doctors;
-    return '<section class="sec' + (tier === 1 ? " sec-tint" : "") + '" id="doctors"><div class="wrap">' + head(tier === 1 ? "About the clinic" : "Our doctors", tier === 1 ? "Meet your *dentist.*" : "Experienced, gentle, *on time.*", tier === 1 ? "" : S.about) +
+    return '<section class="sec' + (tier === 1 ? " sec-tint" : "") + '" id="doctors"><div class="wrap">' + head(tier === 1 ? "About the clinic" : "Our doctors", tier === 1 ? "Meet your *" + (K.doctorWord || "doctor") + ".*" : (S.doctorsTitle || "Experienced, gentle, *on time.*"), tier === 1 ? "" : S.about) +
       '<div class="docs' + (docs.length === 1 ? " docs-one" : "") + '">' + list(docs, function (d) {
         return '<article class="doc rv"><div class="doc-ph">' + (d.photo ? '<img src="' + esc(src(d.photo)) + '" alt="' + esc(d.name) + '" loading="lazy">' : "<span>" + esc(initials(d.name)) + "</span><small>Doctor's photo</small>") + '</div><div class="doc-b"><h3>' + esc(d.name) + '</h3><p class="doc-r">' + esc(d.role) + "</p><p>" + esc(d.note) + "</p>" + (d.langs ? '<p class="doc-l">Speaks ' + esc(d.langs) + "</p>" : "") +
           (docs.length === 1 && tier === 1 ? '<p class="muted">' + esc(S.about) + "</p>" : "") + "</div></article>";
@@ -150,7 +150,7 @@
       '<p class="err" hidden></p><button class="btn btn-warm" type="submit">' + ic("cal") + "<span>Request appointment</span></button></form></div></section>";
   };
   R.tips = function () {
-    return '<section class="sec"><div class="wrap">' + head("Patient tips", "Small things that *save teeth.*") + '<div class="tips">' + list(S.tips, function (t) { return '<article class="tip rv"><h3>' + esc(t[0]) + "</h3><p>" + esc(t[1]) + "</p></article>"; }) + "</div></div></section>";
+    return '<section class="sec"><div class="wrap">' + head("Patient tips", S.tipsTitle || "Small things that *make a difference.*") + '<div class="tips">' + list(S.tips, function (t) { return '<article class="tip rv"><h3>' + esc(t[0]) + "</h3><p>" + esc(t[1]) + "</p></article>"; }) + "</div></div></section>";
   };
   R.faq = function () {
     return '<section class="sec sec-tint" id="faq"><div class="wrap faq-w">' + head("FAQ", "Before your *first visit.*") + '<div class="faq">' + list(S.faq, function (f) { return '<details class="rv"><summary>' + esc(f[0]) + "</summary><p>" + esc(f[1]) + "</p></details>"; }) + "</div></div></section>";

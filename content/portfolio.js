@@ -34,7 +34,7 @@ CONTENT.portfolio = {
     ],
     "cta": "Book an appointment",
     "summary": "A ready clinic website in three plans — treatments with prices, doctor profiles, appointment requests, review QR and WhatsApp enquiries.",
-    "idealFor": "Dental, skin and physiotherapy clinics with 1–5 doctors.",
+    "idealFor": "Dental, skin and physiotherapy clinics with 1–5 doctors — ready versions for each.",
     "pages": [
       "Home with booking buttons",
       "Treatments with starting prices",
@@ -69,6 +69,14 @@ CONTENT.portfolio = {
       [
         "Pro",
         "samples/clinic/pro/"
+      ],
+      [
+        "Physio version",
+        "samples/clinic/physio/"
+      ],
+      [
+        "Skin version",
+        "samples/clinic/skin/"
       ]
     ],
     "media": [

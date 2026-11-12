@@ -24,8 +24,8 @@ window.SITE = {
     city: "Faridabad",
     address: "Shop 14, Main Market, Sector 16, Faridabad, Haryana",
     mapUrl: "https://maps.google.com/?q=Sector+16+Faridabad",
-    phone: "+91 95829 27207",
-    whatsapp: "919582927207",         // 91 + number, bina + aur space
+    phone: "+91 70151 73249",
+    whatsapp: "917015173249",         // 91 + number, bina + aur space
     email: "orders@example.com",
     hours: "Mon–Sat 9:30 am – 8:30 pm · Sun 11 am – 4 pm",
     since: "2011",

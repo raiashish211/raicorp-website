@@ -14,9 +14,10 @@ CONTENT.site = {
   founderRole: "Founder & lead engineer",
   founderUrl: "ashish/index.html",   // founder ka portfolio: raicorp.in/ashish
 
-  whatsapp: "919582927207",          // 91 + number, bina + aur space
-  phoneDisplay: "+91 95829 27207",
-  email: "hello@raicorp.in",
+  whatsapp: "917015173249",          // 91 + number, bina + aur space
+  phoneDisplay: "+91 70151 73249",
+  email: "hello@raicorp.in",          // sales / new projects
+  // supportEmail: "support@raicorp.in", // maintenance & issues — mailbox/alias banne ke baad uncomment karo
   hours: "Mon–Sat, 10am–7pm IST",
   responseTime: "Reply within one working day",
 

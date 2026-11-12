@@ -10,7 +10,7 @@ R.site = {
   developmentSite: "../index.html",
   // Group bar (upar ki patti) ke links
   groupLinks: { dev: "../index.html", rec: "index.html" },
-  email: "raiashishhh@gmail.com",        // public email (phone number public nahi kiya)
+  email: "hello@raicorp.in",              // baad me careers@raicorp.in bana ke yahan badal sakte ho
   // Formspree (formspree.io) ka free endpoint daalo to applications seedha email pe aayengi.
   // Khaali chhodoge to form user ke email app me ready message khol dega.
   formEndpoint: "",

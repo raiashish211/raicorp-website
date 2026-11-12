@@ -20,14 +20,16 @@ window.SITE = {
   clinic: {
     name: "Pearl Smile Dental Studio",
     short: "Pearl Smile",
-    specialty: "Dental clinic",                         // "Skin & hair clinic", "Physiotherapy clinic" ...
+    specialty: "Dental clinic",
+    icon: "tooth",                                      // logo/hero icon: tooth, spine, skin, heart ...
+    doctorWord: "dentist",                              // basic plan heading: "Meet your dentist"                         // "Skin & hair clinic", "Physiotherapy clinic" ...
     tagline: "Family & cosmetic dentistry",
     logo: "",                                           // "img/logo.png" — khaali = auto logo
     city: "Mohali",
     address: "SCO 21, Sector 70, Mohali, Punjab 160071",
     mapUrl: "https://maps.google.com/?q=Sector+70+Mohali",
-    phone: "+91 95829 27207",
-    whatsapp: "919582927207",                           // 91 + number
+    phone: "+91 70151 73249",
+    whatsapp: "917015173249",                           // 91 + number
     email: "frontdesk@example.com",
     hours: [["Mon – Sat", "10:00 am – 2:00 pm, 5:00 pm – 8:30 pm"], ["Sunday", "By appointment"]],
     reviewUrl: "https://www.google.com/maps",           // clinic ka Google review link (g.page/r/.../review)
@@ -109,6 +111,7 @@ window.SITE = {
   // Real photos: gallery: [{ label: "Reception", image: "img/reception.jpg" }, ...]
 
   reviewsTitle: "What patients say",
+  tipsTitle: "Small things that *save teeth.*",
 
   appointment: {
     days: 7,                             // aage kitne din dikhane hain
