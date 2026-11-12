@@ -18,6 +18,89 @@ CONTENT.portfolio = {
   items: [
   {
     "type": "website",
+    "id": "clinic-kit",
+    "category": "clinics",
+    "title": "Clinic Kit — Pearl Smile Dental",
+    "location": "Mohali",
+    "status": "concept",
+    "theme": "#0E4F5A",
+    "accent": "#2FB4A6",
+    "heroText": "Gentle dental care, on time",
+    "nav": [
+      "Treatments",
+      "Doctors",
+      "Costs",
+      "Contact"
+    ],
+    "cta": "Book an appointment",
+    "summary": "A ready clinic website in three plans — treatments with prices, doctor profiles, appointment requests, review QR and WhatsApp enquiries.",
+    "idealFor": "Dental, skin and physiotherapy clinics with 1–5 doctors.",
+    "pages": [
+      "Home with booking buttons",
+      "Treatments with starting prices",
+      "Doctor profiles",
+      "Appointment request with day & time slot",
+      "Cost guide, FAQ, contact & map"
+    ],
+    "features": [
+      "3 plans: Basic, Advanced, Pro",
+      "One config file per clinic — live in a day",
+      "Appointment request to WhatsApp or Google Sheet",
+      "Google review QR for genuine reviews",
+      "Spam protection and consent built in; no medical data stored"
+    ],
+    "tech": [
+      "HTML/CSS/JS",
+      "Config-driven",
+      "WhatsApp + form tracking",
+      "Fast static hosting"
+    ],
+    "software": "Enquiry log in Google Sheets can be added; no patient records are stored.",
+    "live": "samples/clinic/pro/",
+    "tiers": [
+      [
+        "Basic",
+        "samples/clinic/basic/"
+      ],
+      [
+        "Advanced",
+        "samples/clinic/advanced/"
+      ],
+      [
+        "Pro",
+        "samples/clinic/pro/"
+      ]
+    ],
+    "media": [
+      {
+        "type": "image",
+        "src": "assets/img/work/clinic-kit/1-home.jpg",
+        "label": "Home page"
+      },
+      {
+        "type": "image",
+        "src": "assets/img/work/clinic-kit/2-treatments.jpg",
+        "label": "Treatments & prices"
+      },
+      {
+        "type": "image",
+        "src": "assets/img/work/clinic-kit/3-appointment.jpg",
+        "label": "Appointment request"
+      },
+      {
+        "type": "image",
+        "src": "assets/img/work/clinic-kit/4-costs.jpg",
+        "label": "Cost guide"
+      },
+      {
+        "type": "image",
+        "src": "assets/img/work/clinic-kit/9-mobile.jpg",
+        "label": "On mobile"
+      }
+    ]
+  },
+  {
+    "type": "website",
     "id": "inkline-prints",
     "category": "printing-signage",
     "title": "Inkline Prints & Signs",
